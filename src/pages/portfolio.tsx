@@ -9,7 +9,7 @@ import { Carousel5 } from '@/components/Carousel5'
 import { VideoGallery } from '@/components/VideoGallery';
 import { SocialsFooter } from '@/components/SocialsFooter';
 import { MyMarquee } from '@/components/Marquee'
-import { ImHome3 } from "react-icons/im";
+import { ImHome3 } from 'react-icons/im';
 import Link from 'next/link';
 import Head from 'next/head';
 

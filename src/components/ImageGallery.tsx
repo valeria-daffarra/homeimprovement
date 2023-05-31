@@ -5,7 +5,7 @@ import showerdoor from 'images/frameless-showerdoor.jpg';
 import skylight from 'images/image-skylight.jpeg';
 import door from 'images/porch-door.jpg';
 import Image, { ImageProps } from 'next/image';
-import { HiCursorClick } from "react-icons/hi"
+import { HiCursorClick } from 'react-icons/hi';
 
 export function ImageGallery() {
     return (

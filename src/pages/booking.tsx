@@ -1,7 +1,7 @@
 import { Intro } from '@/components/Intro';
 import { Footer } from '@/components/Footer';
 import { SocialsFooter } from '@/components/SocialsFooter';
-import { ImHome3 } from "react-icons/im";
+import { ImHome3 } from 'react-icons/im';
 import Link from 'next/link';
 import Head from 'next/head';
 

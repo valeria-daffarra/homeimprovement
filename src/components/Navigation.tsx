@@ -1,14 +1,12 @@
-import React from "react"
-import { WithChildrenProps } from '../types';
-import { GiCalendar } from "react-icons/gi";
+import React from 'react';
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from 'framer-motion'
 const navigationVariants = {
   initial: {
-    x: "-0.2rem",
+    x: '-0.2rem',
     opacity: 0,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       staggerChildren: 0.1,
     },
   },
@@ -16,7 +14,7 @@ const navigationVariants = {
     x: 0,
     opacity: 1,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       staggerChildren: 0.1,
     },
   },

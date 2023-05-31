@@ -1,29 +1,29 @@
-import React from "react"
-import { motion } from "framer-motion"
+import React from 'react';
+import { motion } from 'framer-motion';
 const lineOneVariants = {
   initial: {
-    rotate: "0deg",
+    rotate: '0deg',
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
   animate: {
-    y: "3px",
-    rotate: "45deg",
-    transformOrigin: "center center",
+    y: '3px',
+    rotate: '45deg',
+    transformOrigin: 'center center',
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 }
 const lineTwoVariants = {
-  initial: { rotate: "0deg" },
+  initial: { rotate: '0deg' },
   animate: {
-    y: "-3px",
-    rotate: "-45deg",
-    transformOrigin: "center center",
+    y: '-3px',
+    rotate: '-45deg',
+    transformOrigin: 'center center',
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 }
@@ -42,13 +42,13 @@ const Menu: React.FunctionComponent<MenuProps> = ({ menuOpen, cycleMenuOpen }) =
         <motion.div
           variants={lineOneVariants}
           initial="initial"
-          animate={menuOpen ? "animate" : "initial"}
+          animate={menuOpen ? 'animate' : 'initial'}
           className="bg-gray-900 w-full h-0.5"
         ></motion.div>
         <motion.div
           variants={lineTwoVariants}
           initial="initial"
-          animate={menuOpen ? "animate" : "initial"}
+          animate={menuOpen ? 'animate' : 'initial'}
           className="bg-gray-900 w-full h-0.5"
         ></motion.div>
       </motion.div>

@@ -1,8 +1,8 @@
 import { FaDog } from 'react-icons/fa';
 import { WithChildrenProps } from '../types';
-import Menu from "./Menu";
-import Navigation from "./Navigation";
-import { useCycle } from "framer-motion";
+import Menu from './Menu';
+import Navigation from './Navigation';
+import { useCycle } from 'framer-motion';
 import { Logo } from '@/components/Logo';
 import Link from 'next/link';
 import { GiCalendar } from 'react-icons/gi';

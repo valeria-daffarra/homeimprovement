@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { title } from '../fonts';
-import { FaDog } from 'react-icons/fa';
 import { LogoSvg } from './LogoSvg';
 
 

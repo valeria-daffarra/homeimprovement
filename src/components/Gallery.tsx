@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { text } from '../fonts';
 import Link from 'next/link';
 import { ImageGallery } from '@/components/ImageGallery';
-import {GiWindow, GiDoor, GiCrackedGlass, GiShower, GiWoodFrame, GiStoneWall, GiCalendar} from "react-icons/gi"
+import {GiWindow, GiDoor, GiCrackedGlass, GiShower, GiWoodFrame, GiStoneWall, GiCalendar} from 'react-icons/gi';
 
 export function Gallery() {
     return (
@@ -48,7 +48,7 @@ export function Gallery() {
                 <Link href='/booking' className='flex gap-3 justify-center items-center content-center'><GiCalendar />Book your Appointment</Link>
             </button>
             <span className="text-2xl -mt-10 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary before:shadow-lg relative inline-block">
-                <span className="relative text-white">It's free!</span>
+                <span className="relative text-white">It&apos;s free!</span>
             </span>
             <ImageGallery />
         </div>

@@ -1,14 +1,14 @@
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm, ValidationError } from '@formspree/react';
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm("process.env.NEXT_PUBLIC_FORM");
+  const [state, handleSubmit] = useForm('process.env.NEXT_PUBLIC_FORM');
 
   if (state.succeeded) {
     return <p>Thanks for your submission!</p>;
   }
 
   return (
-    <div id='contact' className="w-full bg-four flex justify-center">
+    <div id='contact' className='w-full bg-four flex justify-center'>
         <div className="w-full m-4 py-14 md:w-1/2 lg:m-24">
             <form onSubmit={handleSubmit}>
             <label htmlFor="name" className='block my-4 text-xl font-medium text-light'>Name</label>

@@ -2,7 +2,7 @@ import Image, { ImageProps } from 'next/image';
 import clsx from 'clsx';
 import { title } from '../fonts';
 import yelp from '../images/yelp-logo.png';
-import { FaStar } from "react-icons/fa"
+import { FaStar } from 'react-icons/fa';
 import { WithChildrenProps } from '../types';
 import { useEffect, useRef, useState } from 'react';
 import {

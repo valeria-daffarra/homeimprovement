@@ -1,4 +1,3 @@
-import { HiCursorClick } from "react-icons/hi"
 
 
 export function VideoGallery() {
