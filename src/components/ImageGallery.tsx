@@ -1,19 +1,25 @@
 import { motion, useAnimationControls, Variants } from 'framer-motion';
-import grooming1 from 'images/grooming-1.webp';
-import grooming2 from 'images/grooming-2.webp';
-import grooming3 from 'images/grooming-3.webp';
-import grooming4 from 'images/grooming-4.webp';
+import Link from 'next/link';
+import windowinstallation from 'images/marvin-windows.jpg'
+import showerdoor from 'images/frameless-showerdoor.jpg';
+import skylight from 'images/image-skylight.jpeg';
+import door from 'images/porch-door.jpg';
 import Image, { ImageProps } from 'next/image';
-import { useEffect, useState } from 'react';
+import { HiCursorClick } from "react-icons/hi"
 
 export function ImageGallery() {
     return (
-        <div className="grid w-full max-w-screen-xl grid-cols-2 grid-rows-2 gap-2 p-4 lg:grid-cols-4 lg:grid-rows-1">
-            <GalleryImage src={grooming1} alt="dog1" />
-            <GalleryImage src={grooming2} alt="dog2" />
-            <GalleryImage src={grooming3} alt="dog3" />
-            <GalleryImage src={grooming4} alt="dog4" />
-        </div>
+        <>
+            <div className="grid w-full max-w-screen-xl grid-cols-2 grid-rows-2 gap-2 p-4 lg:grid-cols-4 lg:grid-rows-1">
+                <GalleryImage src={windowinstallation} alt="window installation" />
+                <GalleryImage src={showerdoor} alt="shower door" />
+                <GalleryImage src={skylight} alt="skylight" />
+                <GalleryImage src={door} alt="door installation" />
+            </div>
+            <div className='w-full flex gap-4 items-center justify-center sm:justify-end mx-12 mb-12 text-2xl'>
+                <button className="hover:bg-secondary flex gap-4 p-4 rounded-full items-center"><Link href='/portfolio'><p>Check our projects</p></Link><HiCursorClick/></button>
+            </div>
+        </>
     );
 }
 

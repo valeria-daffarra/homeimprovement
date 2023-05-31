@@ -1,13 +1,9 @@
 import {
-    Fredoka_One,
-    Inter,
-    Poppins,
-    Rubik,
-    Source_Sans_Pro,
+    Catamaran
 } from 'next/font/google';
-export const logo = Rubik({ subsets: ['latin'] });
-export const text = Source_Sans_Pro({
+export const logo = Catamaran({ subsets: ['latin'] });
+export const text = Catamaran({
     subsets: ['latin'],
-    weight: ['300', '400', '600', '700'],
+    weight: ['100','200', '300', '400', '600', '700'],
 });
-export const title = Fredoka_One({ subsets: ['latin'], weight: '400' });
+export const title = Catamaran({ subsets: ['latin'], weight: '400' });

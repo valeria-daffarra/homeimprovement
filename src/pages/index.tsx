@@ -6,6 +6,7 @@ import { SocialsFooter } from '@/components/SocialsFooter';
 import { Intro } from '@/components/Intro';
 import { Gallery } from '@/components/Gallery';
 import { Testimonials } from '@/components/Testimonials';
+import { ContactForm } from '@/components/ContactForm'
 
 export default function Home() {
     return (
@@ -15,13 +16,14 @@ export default function Home() {
                 text.className
             )}>
             <Head>
-                <title>Hello World!</title>
+                <title>Mr Glazier NYC</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Intro />
             <Gallery />
             <Testimonials />
             <Footer />
+            <ContactForm />
             <SocialsFooter />
         </div>
     );

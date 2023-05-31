@@ -1,9 +1,8 @@
 import Image, { ImageProps } from 'next/image';
 import clsx from 'clsx';
 import { title } from '../fonts';
-import pet1 from '../images/pet1.webp';
-import pet2 from '../images/pet2.webp';
-import pet3 from '../images/pet3.webp';
+import yelp from '../images/yelp-logo.png';
+import { FaStar } from "react-icons/fa"
 import { WithChildrenProps } from '../types';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -14,43 +13,21 @@ import {
     useTransform,
 } from 'framer-motion';
 
-const names = [
-    'Abi',
-    'Brian',
-    'Carl',
-    'Daniella',
-    'Edward',
-    'Ruby',
-    'John',
-    'Alan',
-];
-const locations = ['Nottingham', 'Manchester', 'London', 'York', 'Brighton'];
+
 type TestimonialProps = WithChildrenProps & {
     className?: string;
     parallax: MotionValue<number>;
 };
 function Testimonial({ className, children, parallax }: TestimonialProps) {
-    const [randomName, setRandomName] = useState('');
-    const [randomLocation, setRandomLocation] = useState('');
-
-    useEffect(() => {
-        setRandomName(names[Math.floor(Math.random() * names.length)]);
-        setRandomLocation(
-            locations[Math.floor(Math.random() * locations.length)]
-        );
-    }, []); //To make sure the random generation only runs on the client
 
     return (
         <motion.div
             className={clsx(
-                'text-md flex aspect-[3/4] h-96 flex-col items-center justify-between gap-8 rounded-md bg-white p-6 font-light text-secondary shadow',
+                'text-md flex aspect-[3/4] h-80 flex-col items-center justify-around gap-4 rounded-md bg-white p-6 font-light text-secondary shadow',
                 className
             )}
             style={{ y: parallax }}>
             {children}
-            <div className="w-full text-start font-bold">
-                {randomName}, {randomLocation}
-            </div>
         </motion.div>
     );
 }
@@ -70,41 +47,32 @@ export function Testimonials() {
             ref={target}>
             <h2
                 className={clsx(
-                    'text-center text-4xl text-primary md:w-1/2 md:text-7xl',
+                    'text-center text-4xl text-light lg:w-1/2 md:text-7xl',
                     title.className
                 )}>
                 What Our Happy Clients Say
             </h2>
-            <div className="flex grow flex-wrap items-center items-center justify-center justify-center gap-24">
-                <Testimonial className="md:mb-24" parallax={parallax}>
-                    <TestimonialImage src={pet1} alt="" />
-                    &quot;They do a great job making Milo look so lovely. The
-                    staff are knowledgeable and friendly, always willing to give
-                    help and advice. Would definitely recommend!&quot;
+            <div className="flex grow flex-wrap items-center justify-center gap-24">
+                <Testimonial className="mt-12 lg:mb-24 h-[400px]" parallax={parallax}>
+                    <div className='text-primary flex'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+                    &quot;After promptly responding to my inquiry, they came out the next day [...] and they were able to complete the job the following evening. I am very pleased with the work and it saved me a lot of money[...]. They are very knowledgeable and have great customer service!&quot;
+                    <div className='w-full'><p className="font-bold">Lisanne C.</p></div>
                 </Testimonial>
                 <Testimonial className="md:mt-12" parallax={reverseParallax}>
-                    <TestimonialImage src={pet2} alt="" />
-                    &quot;They do a great job making Milo look so lovely. The
-                    staff are knowledgeable and friendly, always willing to give
-                    help and advice. Would definitely recommend!&quot;
+                    <div className='text-primary flex'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+                    &quot;Super nice and friendly. My door took longer to place and on a very cold night and still George and his crew got it done. Totally recommend.&quot;
+                    <div className='w-full'><p className="font-bold">Van S.</p></div>
                 </Testimonial>
-                <Testimonial className="md:mb-12" parallax={parallax}>
-                    <TestimonialImage src={pet3} alt="" />
-                    &quot;They do a great job making Milo look so lovely. The
-                    staff are knowledgeable and friendly, always willing to give
-                    help and advice. Would definitely recommend!&quot;
+                <Testimonial className="md:mb-12 h-[400px]" parallax={parallax}>
+                    <div className='text-primary flex'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+                    &quot;Highly recommend! I submitted a quote request through Yelp and they responded the same day and offered a free in person quote. [...] They arrived on time and did a quick and efficient job. Their price was also unbeatable! I would definitely use them again.&quot;
+                    <div className='w-full'><p className="font-bold">Mel S.</p></div>
                 </Testimonial>
+            </div>
+            <div className=' w-1/2 mt-20 sm:mt-0 md:w-1/4'>
+                <Image src={yelp} alt='yelp 5 star'></Image>
             </div>
         </div>
     );
 }
 
-function TestimonialImage({ src, alt }: ImageProps) {
-    return (
-        <div className="flex h-full w-full items-center justify-center">
-            <div className="aspect-square h-28  overflow-clip rounded-full">
-                <Image src={src} alt={alt} className="object-cover" />
-            </div>
-        </div>
-    );
-}

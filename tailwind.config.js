@@ -12,14 +12,14 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                title: ['Inter', ...defaultTheme.fontFamily.sans],
-                text: ['Inter', ...defaultTheme.fontFamily.sans],
+                title: ['Catamaran', ...defaultTheme.fontFamily.sans],
+                text: ['Catamaran', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: '#936A76',
+                primary: '#D48960',
                 secondary: '#6F273D',
                 three: '#B69196',
-                four: '#D48960',
+                four: '#475569',
                 light: '#E6E9E5',
             },
         },
