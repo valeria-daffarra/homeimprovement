@@ -10,7 +10,7 @@ export function ContactForm() {
   return (
     <div id='contact' className='w-full bg-four flex justify-center'>
         <div className="w-full m-4 py-14 md:w-1/2 lg:m-24">
-            <form onSubmit={handleSubmit}>
+            <form method="POST" onSubmit={handleSubmit}>
             <label htmlFor="name" className='block my-4 text-xl font-medium text-light'>Name</label>
             <input id="name" type="name" name="name" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' required />
             <label htmlFor="email" className='block my-4 text-xl font-medium text-light'>Email Address</label>
