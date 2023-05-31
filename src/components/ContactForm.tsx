@@ -4,7 +4,11 @@ export function ContactForm() {
   const [state, handleSubmit] = useForm('process.env.NEXT_PUBLIC_FORM');
 
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
+    return (
+      <div id='contact' className='w-full h-96 bg-four flex justify-center items-center'>
+            <p className='text-light text-xl'>Thanks for your submission!</p>
+      </div>
+    )
   }
 
   return (
@@ -12,7 +16,8 @@ export function ContactForm() {
         <div className="w-full m-4 py-14 md:w-1/2 lg:m-24">
             <form method="POST" onSubmit={handleSubmit}>
             <label htmlFor="name" className='block my-4 text-xl font-medium text-light'>Name</label>
-            <input id="name" type="name" name="name" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' required />
+            <input id="name" type="text" name="name" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' required />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
             <label htmlFor="email" className='block my-4 text-xl font-medium text-light'>Email Address</label>
             <input id="email" type="email" name="email" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' required />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
