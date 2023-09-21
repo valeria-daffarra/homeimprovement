@@ -42,7 +42,7 @@ const Navigation: React.FunctionComponent<MenuProps> = ({ menuOpen }) => {
             <motion.li variants={navigationVariants} className="py-0.5 text-[#475569] hover:text-primary"><Link href="/portfolio">Portfolio</Link></motion.li>
             <motion.li variants={navigationVariants} className="py-0.5 text-[#475569] hover:text-primary"><Link href="#contact" scroll={false}>Contact</Link></motion.li>
             <motion.li variants={navigationVariants} className="py-0.5"><button className="rounded-full bg-primary hover:bg-secondary active:bg-secondary p-1 font-thin leading-none text-white">
-                <Link href='/booking' className=''>Book Now</Link>
+                <Link href='/booking' target="blank" className=''>Book Now</Link>
             </button></motion.li>
           </motion.ul>
         </nav>
