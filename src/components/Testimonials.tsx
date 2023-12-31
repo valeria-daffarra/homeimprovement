@@ -22,7 +22,7 @@ function Testimonial({ className, children, parallax }: TestimonialProps) {
     return (
         <motion.div
             className={clsx(
-                'text-md flex aspect-[3/4] h-80 flex-col items-center justify-around gap-4 rounded-md bg-white p-6 font-light text-secondary shadow',
+                'text-md flex aspect-[3/4] h-80 flex-col items-center justify-around gap-4 rounded-md bg-white p-6 font-light text-four shadow',
                 className
             )}
             style={{ y: parallax }}>
@@ -42,7 +42,7 @@ export function Testimonials() {
     useMotionValueEvent(parallax, 'change', (v) => console.log(v));
     return (
         <div
-            className="flex min-h-[150vh] w-full flex-col items-center justify-center gap-12 bg-secondary px-4 py-24 md:p-24"
+            className="flex min-h-[150vh] w-full flex-col items-center justify-center gap-12 bg-four px-4 py-24 md:p-24"
             ref={target}>
             <h2
                 className={clsx(

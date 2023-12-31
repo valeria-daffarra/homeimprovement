@@ -23,8 +23,8 @@ export function Footer() {
             <div className=''>
                 <div className="text-xl font-bold">Contact Us</div>
                 <div>
-                    <div>(332) 248 8148</div>
-                    <div>sales@mrglaziernyc.com</div>
+                    <div>(646) 899 9393</div>
+                    <div>info@remodelinghome.org</div>
                 </div>
             </div>
             <div>

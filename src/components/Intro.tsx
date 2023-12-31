@@ -43,12 +43,12 @@ export function Intro() {
     const isInView = useInView(ref)
     
     return (
-        <div className="flex h-[36rem] w-full flex-col items-center justify-center overflow-x-clip bg-four text-light lg:h-[90vh] font-lato">
+        <div className="flex main-embla w-full flex-col items-center justify-center overflow-x-clip bg-four text-light lg:h-[100vh] font-lato">
             <NavBar />
-            <main className="relative flex w-full grow items-start justify-center sm:px-4 sm:items-center sm:justify-start xl:px-12">
+            <main className="relative  sm:flex w-full grow items-start justify-center sm:px-4  sm:items-center sm:justify-around xl:px-12">
                 <motion.header
                     className={clsx(
-                        'z-10 flex flex-col md:gap-4 md:-mt-36',
+                        'z-10 sm:flex flex-col ',
 
                     )}
                     initial="hide"
@@ -59,10 +59,10 @@ export function Intro() {
                         <div className="w-full " dangerouslySetInnerHTML={{__html: LogoSvg}}></div>
                     </div>
                     <p className={clsx('text-3xl text-center font-light hidden md:block font-lato', )}>
-                        Enhance your view
+                        Your Vision, Our Trades
                     </p>
                 </motion.header>
-                <div className="w-full sm:w-3/5 sm:-bottom-4 xl:-bottom-8 xl:w-3/5 2xl:-bottom-12">
+                <div className="w-full flex justify-center sm:w-3/5 embla_flex_container  xl:w-3/5 ">
                     <EmblaCarousel />
                 </div>
             </main>
