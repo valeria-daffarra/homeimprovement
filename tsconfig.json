@@ -36,7 +36,7 @@
     "**/*.ts",
     "**/*.tsx",
     "types.d.ts"
-  ],
+, "src/components/Embla.jsx"  ],
   "exclude": [
     "node_modules"
   ]

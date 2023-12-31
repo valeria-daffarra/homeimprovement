@@ -17,7 +17,7 @@ export default function Booking() {
     return (
         <>
         <Head>
-            <title>Mr Glazier NYC - Portfolio</title>
+            <title>Home Renovation - Portfolio</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
           <Intro />

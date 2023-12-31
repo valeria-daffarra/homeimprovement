@@ -12,6 +12,8 @@
     "@storybook/react": "^7.0.18",
     "@tailwindcss/typography": "^0.5.9",
     "clsx": "^1.2.1",
+    "embla-carousel-autoplay": "^8.0.0-rc17",
+    "embla-carousel-react": "^8.0.0-rc17",
     "eslint-config-next": "^13.2.3",
     "framer-motion": "^10.1.0",
     "install": "^0.13.0",

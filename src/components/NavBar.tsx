@@ -18,14 +18,14 @@ function NavItem({ children }: WithChildrenProps) {
 export function NavBar() {
     const [menuOpen, cycleMenuOpen] = useCycle(false, true);
     return (
-        <div className=" flex h-24 w-full items-center justify-between pl-6 pr-12">
+        <div className=" flex h-24 w-full bg-white items-center justify-between pl-6 pr-12">
             <Logo />
-            <nav className="hidden lg:gap-4 text-normal md:flex lg:text-xl xl:gap-24">
+            <nav className="hidden lg:gap-4 text-normal md:flex lg:text-xl xl:gap-24 text-four">
                 <NavItem><Link href="/">Home</Link></NavItem>
                 <NavItem><Link href="#service" scroll={false}>Services</Link></NavItem>
                 <NavItem><Link href="/portfolio">Portfolio</Link></NavItem>
                 <NavItem><Link href="#contact" scroll={false}>Contact</Link></NavItem>
-                <button className="flex flex-row rounded-full bg-primary hover:bg-secondary active:bg-secondary px-2 py-2 text-md lg:text-xl font-md text-white">
+                <button className="flex flex-row rounded-full bg-primary hover:bg-four active:bg-four px-2 py-2 text-md lg:text-xl font-md text-white">
                 <Link href='/booking' className='flex justify-center items-center content-center gap-2'><GiCalendar />Book Now</Link>
             </button>
             </nav>

@@ -1,6 +1,5 @@
 import Image, { ImageProps } from 'next/image';
 import clsx from 'clsx';
-import { title } from '../fonts';
 import yelp from '../images/yelp-logo.png';
 import { FaStar } from 'react-icons/fa';
 import { WithChildrenProps } from '../types';
@@ -48,7 +47,7 @@ export function Testimonials() {
             <h2
                 className={clsx(
                     'text-center text-4xl text-light lg:w-1/2 md:text-7xl',
-                    title.className
+                    
                 )}>
                 What Our Happy Clients Say
             </h2>

@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { text } from '../fonts';
 import Link from 'next/link';
 import { ImageGallery } from '@/components/ImageGallery';
 import {GiWindow, GiDoor, GiCrackedGlass, GiShower, GiWoodFrame, GiStoneWall, GiCalendar} from 'react-icons/gi';
@@ -8,8 +7,8 @@ export function Gallery() {
     return (
         <div id='service'
             className={clsx(
-                'mt-28 flex min-h-screen w-full flex-col items-center justify-center gap-16 px-4 text-primary md:px-12',
-                text.className
+                'mt-28 flex min-h-screen w-full flex-col items-center justify-center gap-16 px-4 text-primary md:px-12 font-lato',
+                
             )}>
             <span className="text-2xl md:text-4xl">ALL KIND OF WINDOWS & DOORS</span>
             <h1

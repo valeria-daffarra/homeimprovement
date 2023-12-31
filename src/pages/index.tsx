@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import clsx from 'clsx';
-import { text, title } from '../fonts';
 import { Footer } from '@/components/Footer';
 import { SocialsFooter } from '@/components/SocialsFooter';
 import { Intro } from '@/components/Intro';
@@ -12,11 +11,12 @@ export default function Home() {
     return (
         <div
             className={clsx(
-                'flex min-h-screen w-full flex-col items-center justify-center',
-                text.className
+                'flex min-h-screen w-full flex-col items-center justify-center font-lato',
+                
             )}>
             <Head>
-                <title>Mr Glazier NYC</title>
+                <title>Home Renovation</title>
+                <meta name="description" content="Call us to get a quote on your home renovation and home improvement projects, we are licensed contractors, insured, open 24/7. We do windows, doors, drywall, installation, paint, flooring, plumbing, and much more! Price match and incredible discounts." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Intro />

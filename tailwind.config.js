@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
+
 /** @type {import("tailwindcss").Config} */
 module.exports = {
     content: [
@@ -12,14 +13,13 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                title: ['Catamaran', ...defaultTheme.fontFamily.sans],
-                text: ['Catamaran', ...defaultTheme.fontFamily.sans],
+                lato: ['Century Gothic', 'Monserrat', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: '#D48960',
+                primary: '#ff9900',
                 secondary: '#6F273D',
                 three: '#B69196',
-                four: '#475569',
+                four: '#146eb4',
                 light: '#E6E9E5',
             },
         },

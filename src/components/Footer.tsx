@@ -1,6 +1,6 @@
 import { Logo } from '@/components/Logo';
 import clsx from 'clsx';
-import { text } from '../fonts';
+
 import { LogoSvgBlack } from './LogoSvgBlack';
 import {
     FaFacebook,
@@ -14,8 +14,8 @@ export function Footer() {
     return (
         <section
             className={clsx(
-                'section flex w-full flex-col items-start justify-center gap-10 p-10 py-14 md:py-48 text-four md:flex-row  md:justify-around',
-                text.className
+                'section flex w-full flex-col items-start justify-center gap-10 p-10 py-14 md:py-48 text-four md:flex-row  md:justify-around font-lato',
+                
             )}>
             <div className="w-[80px] xl:w-[100px] ">
                 <div dangerouslySetInnerHTML={{__html: LogoSvgBlack}}></div>
