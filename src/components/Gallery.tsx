@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import { ImageGallery } from '@/components/ImageGallery';
 import {GiWindow, GiDoor, GiCrackedGlass, GiShower, GiWoodFrame, GiStoneWall, GiCalendar, GiKitchenTap, GiWoodBeam} from 'react-icons/gi';
-import { MdArchitecture } from "react-icons/md";
+import { MdArchitecture } from 'react-icons/md';
 
 export function Gallery() {
     return (
