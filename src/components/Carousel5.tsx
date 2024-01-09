@@ -98,8 +98,8 @@ export function Carousel5() {
         <div className='flex flex-wrap gap-0.5 justify-center'
         >
             <Item
-            original="https://res.cloudinary.com/dwpxbyawm/image/upload/v1685418950/MR%20GLAZIER%20NYC/IMG_3685_dlqo7y.jpg"
-            thumbnail="https://res.cloudinary.com/dwpxbyawm/image/upload/v1685418950/MR%20GLAZIER%20NYC/IMG_3685_dlqo7y.jpg"
+            original="https://res.cloudinary.com/dwpxbyawm/image/upload/v1704835183/IMG_3685_dlqo7y.jpg"
+            thumbnail="https://res.cloudinary.com/dwpxbyawm/image/upload/v1704835183/IMG_3685_dlqo7y.jpg"
             width="1100"
             height="1500"
             alt="Window Installation"
@@ -107,7 +107,7 @@ export function Carousel5() {
             {({ ref, open }) => (
                 <img
                 style={smallItemStyles}
-                src="https://res.cloudinary.com/dwpxbyawm/image/upload/v1685418950/MR%20GLAZIER%20NYC/IMG_3685_dlqo7y.jpg"
+                src="https://res.cloudinary.com/dwpxbyawm/image/upload/v1704835183/IMG_3685_dlqo7y.jpg"
                 ref={ref as React.MutableRefObject<HTMLImageElement>}
                 onClick={open}
                 />
